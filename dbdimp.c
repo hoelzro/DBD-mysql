@@ -3259,7 +3259,6 @@ my_ulonglong mysql_st_internal_execute(
              mysql_sqlstate(svsock));
     if (DBIc_TRACE_LEVEL(imp_xxh) >= 2)
       PerlIO_printf(DBILOGFP, "IGNORING ERROR errno %d\n", errno);
-    rows = -2;
   }
 #endif
   return(rows);
